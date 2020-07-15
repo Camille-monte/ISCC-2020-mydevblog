@@ -8,7 +8,8 @@
         <link rel="stylesheet"  href="page.css"> 
     </head>
  
-  
+</br>
+</br> 
 <?php
         function connect_to_database(){
             $servername = 'localhost';
