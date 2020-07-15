@@ -16,7 +16,7 @@
 
    <img class="pic" src="../assets/toppng.com-clip-art-royalty-free-download-lag-stage-series-solid-lag-ukulele-1200x682.png"> 
 
-    <p>Ici vous allez pouvoir retrouver des tablatures mais aussi des grattagages en vidéo, <br/>au menu :
+    <p>Ici vous allez pouvoir retrouver des tablatures mais aussi des grattages en vidéo, <br/>au menu :
         <li>Explications,</li>
         <li>Musiques actuelles</li>
         <li>Musiques des années 80</li>
@@ -54,10 +54,18 @@
 
             foreach($articles as $article){
                 echo '<h3>' .$article['Sujet'].'<br></h3>';
-                echo '<p>' .$article['Article'].'</p>';
+                echo '<p>' .$article['Extrait'].'</p>';
+                $number_article=$article['Numéro'];
+            ?>
+        
+            <a href="front.php?page=article&Numéro=<?php echo $number_article?>">Lire l'article en entier</a>
+
+        
+            
+        
+            <?php
             }
         }
-
         $pdo=connect_to_database();
         recup_5_articles($pdo);
         ?>

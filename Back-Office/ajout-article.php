@@ -25,22 +25,24 @@ function connect_to_database(){
 }
 function login ($pdo){
     try{ 
-        $Numéro=$_POST['Numéro'];
         $Sujet=$_POST['Sujet'];
         $Article=$_POST['Article'];
         $Extrait=$_POST['Extrait'];
         $Auteur=$_POST['Auteur'];
         $Dates=$_POST['Dates'];
 
-        if (!empty($Numéro) AND !empty($Sujet) AND !empty($Article) AND !empty($Extrait) AND !empty($Auteur) AND !empty($Dates)){
+       
+
+        if ( !empty($Sujet) && !empty($Article) && !empty($Extrait) && !empty($Auteur) && !empty($Dates)){
             $Article=addslashes($Article);
             $Extrait=addslashes($Extrait);
 
             $sql="INSERT INTO
-          Articles (Numéro, Sujet, Article, Extrait, Photo, Auteur, Dates)
-            VALUES('$Numéro', '$Sujet', '$Article', '$Extrait', ' ', '$Auteur', '$Dates')";
+          Articles (Sujet, Article, Extrait, Photo, Auteur, Dates)
+            VALUES('$Sujet', '$Article', '$Extrait', ' ', '$Auteur', '$Dates')";
             $pdo->exec($sql);
             echo '<p>Article ajouté à la base de données avec succès! </p>';
+            echo '<p><a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=articles"></a></p>';
             }
         }
         catch(PDOException $e){

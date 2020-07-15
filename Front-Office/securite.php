@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Accueil</title>
+        <title>Securité</title>
         <link rel="stylesheet"  href="page.css">
         
     </head>
@@ -17,8 +17,6 @@ function connect_to_database(){
     try{
         $pdo=new PDO("mysql:host=$servername;dbname=$databasename", $username, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo"Vous êtes connecté à la base de donnée.";
-
         return($pdo);
     }
     catch(PDOException $e){

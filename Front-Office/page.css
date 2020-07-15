@@ -36,6 +36,8 @@ body{
         rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px);
     font-size: 20px;
     border: 2px solid black;
+    font-weight: bold;
+
     
     
 }
@@ -79,4 +81,20 @@ footer{
    width: 10%;
    height: 10%;
 
+}
+
+.corps{
+  vertical-align: middle;
+    text-align: center;
+}
+
+h3{
+  vertical-align: middle;
+    text-align: center;
+}
+
+form{
+  vertical-align: middle;
+    text-align: center;
+   
 }

@@ -14,7 +14,7 @@
                     <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=accueil">Accueil</a>
                 <?php endif; ?>
                 <?php if($_GET['page'] == 'articles') : ?>
-                <strong><a style="color:#FF6347" href="my-dev-blogArticles.php">Articles</a></strong>
+                <strong><a style="color:#FF6347" href="form-article.php">Articles</a></strong>
                 <?php else : ?>
                     <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=articles">Articles</a>
                 <?php endif; ?>    
@@ -23,12 +23,7 @@
                 <?php else : ?>
                     <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=contact">Contact</a>
                 <?php endif; ?>
-                <?php if($_GET['page'] == 'connexion') : ?>
-                <strong><a style="color:#FF6347" href="connexion.php">Connexion</a></strong>
-                <?php else : ?>
-                    <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=connexion">Connexion</a>
-                <?php endif; ?>
-
+                
                 
                
         </nav>
@@ -45,7 +40,7 @@
                 include('my-dev-blogAccueil.php');
             }
             elseif($_GET['page'] == 'articles'){
-                include('my-dev-blogArticles.php');
+                include('form-article.php');
             }
             elseif($_GET['page'] == 'contact'){
                 include('my-dev-blogContact.html');
@@ -53,9 +48,9 @@
             elseif($_GET['page'] == 'Erreur-404'){
                 include('404.php');
             }
-            elseif($_GET['page'] == 'connexion'){
-                include('connexion.php');
-            }
+           elseif($_GET['page'] == 'article'){
+               include('article.php');
+           }
    
             
         ?>

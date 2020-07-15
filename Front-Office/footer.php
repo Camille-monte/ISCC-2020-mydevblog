@@ -55,7 +55,23 @@
     <li>
     <a href="https://www.linkedin.com/in/camille-monterastelli-5b2a54194/">Linkedin</a>
     <br/>
-    <li>
-    <a href="">Lien administration</a>
+
     
+    <html>
+    <div class="connexion"  >
+    <?php 
+    if($_GET['page'] == 'connexion') : ?>
+                <strong><a style="color:#FF6347" href="connexion.php">Connexion</a></strong>
+                <?php else : ?>
+                    <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=connexion">Connexion</a>
+                <?php endif; ?>
+
+
+
+   <?php
+   if($_GET['page'] == 'connexion'){
+                include('connexion.php');
+            }
+    ?>
+</div>
 </footer>
