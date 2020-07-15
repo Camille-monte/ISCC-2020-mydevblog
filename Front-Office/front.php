@@ -23,14 +23,11 @@
                 <?php else : ?>
                     <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=contact">Contact</a>
                 <?php endif; ?>
-                
-                
-               
+     
         </nav>
-                
-                
+         
     <header>
-        <h1><br>Ukulélé par CamCam</h1>
+        <h1>Ukulélé par CamCam</h1>
         </div>
     </header>
 

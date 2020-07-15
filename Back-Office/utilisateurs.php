@@ -19,13 +19,31 @@ function connect_to_database(){
     }
  
 }   
-$pdo = connect_to_database();
-$query=$pdo->query("SELECT * FROM utilisateurs")->fetchAll();
 
-echo '<ul>';
-foreach($query as $user){
-    echo'<li>' .$user['loginn'].'</li>';
+function afficher_utilisateurs($pdo){
+
+$utilisateurs=$pdo->query("SELECT * FROM utilisateurs")->fetchAll();
+
+    echo '<ul>';
+    foreach($utilisateurs as $utilisateur){
+
+        echo'<li><strong> Login: </stong>'.$utilisateur['loginn'].'.<strong>Password:</strong>'.$utilisateur['passwordd'].
+        '</br>'
+        ?>
+        <form method="POST" action="./supprimer-utilisateurs.php?id=<?php echo $utilisateurs['id']?>">
+        <button type="submit" name="boutton-supprimer">Supprimer utilisateurs</button>
+        </form>
+        </li>
+    
+
+
+    <?php
+    }
+    echo '</ul>';
 
 }
-echo '</ul>';
+
+
+$pdo = connect_to_database();
+afficher_utilisateurs($pdo);
 ?>

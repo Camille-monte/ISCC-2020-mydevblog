@@ -22,7 +22,7 @@
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
                 echo "<p> Vous êtes connecté</p>";
-                echo "<h2> Voici les 5 derniers articles ! </h2>";
+                
                 return($pdo);
                
             }
@@ -35,13 +35,15 @@
             $articles=$pdo->query("SELECT * FROM Articles")->fetchAll();
 
             foreach($articles as $article){
-                echo '<h3>' .$article['Sujet'].'<br></h3>';
-                echo '<p>' .$article['Article'].'</p>';
-                echo '<p>' .$article['Auteur'].'</p>';
-                echo '<p>' .$article['Dates'].'</p>';
+                echo '<h4>' .$article['Sujet'].'<br></h4>';
+                echo '<p>' .$article['Extrait'].'</p>';
+                $number_article=$article['Numéro'];
+            ?>
+        
+            <a href="front.php?page=article&Numéro=<?php echo $number_article?>">Lire l'article en entier</a>
+            <?php
             }
         }
-
         $pdo=connect_to_database();
         recup_articles($pdo);
         ?>

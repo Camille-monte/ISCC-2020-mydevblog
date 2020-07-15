@@ -12,7 +12,9 @@
             <br/>
 
 <p>Bonjour tout le monde et merci d'être sur mon site dédié à ma nouvelle passion, le UKULÉLÉ !
-   <br/> Je ne suis qu'une débutante alors pas de problème pour comprendre comment je joue. </p>
+   <br/> Je ne suis qu'une débutante alors pas de problème pour comprendre comment je joue. Tout d'abord j'ai créé ce site à l'occasion de l'ISEG Summer Code Camp 2020 avec Epitech.
+  <br/> Pendant ce stage j'ai appris à développer à l'aide de nombreux outils. Voilà le résultat de 3 semaines d'apprentissages ! 
+</br> Bonne lecture !</p>
 
    <img class="pic" src="../assets/toppng.com-clip-art-royalty-free-download-lag-stage-series-solid-lag-ukulele-1200x682.png"> 
 
@@ -53,7 +55,7 @@
             $articles=$pdo->query("SELECT * FROM Articles")->fetchAll();
 
             foreach($articles as $article){
-                echo '<h3>' .$article['Sujet'].'<br></h3>';
+                echo '<h4>' .$article['Sujet'].'<br></h4>';
                 echo '<p>' .$article['Extrait'].'</p>';
                 $number_article=$article['Numéro'];
             ?>
