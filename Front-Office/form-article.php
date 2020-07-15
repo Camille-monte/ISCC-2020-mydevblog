@@ -7,7 +7,7 @@
         <title>Articles</title>
         <link rel="stylesheet"  href="page.css"> 
     </head>
-  <div class="corps">
+ 
   
 <?php
         function connect_to_database(){
@@ -45,5 +45,5 @@
         recup_articles($pdo);
         ?>
 
-  </div>
+
 </html>
