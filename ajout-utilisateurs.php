@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Ajout_utilisateurs</title>
+        <title> MyDevBlog</title>
         <link rel="stylesheet"  href="style.css">
 
         

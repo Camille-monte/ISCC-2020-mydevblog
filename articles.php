@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SILVER BLOG</title>
+<title>Article</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style/front-office.css">
 </head>
