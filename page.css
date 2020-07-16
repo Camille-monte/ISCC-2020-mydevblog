@@ -17,23 +17,9 @@ h1{
 }
 
 body{
-    background:
-      repeating-linear-gradient(90deg, transparent, transparent 50px,
-        rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
-        transparent 56px, transparent 63px,
-        rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,
-        transparent 69px, transparent 116px,
-        rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
-      repeating-linear-gradient(0deg, transparent, transparent 50px,
-        rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
-        transparent 56px, transparent 63px,
-        rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,
-        transparent 69px, transparent 116px,
-        rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
-      repeating-linear-gradient(-45deg, transparent, transparent 5px,
-        rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px),
-      repeating-linear-gradient(45deg, transparent, transparent 5px,
-        rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px);
+  
+  background-size: 100% 100%;
+      
     font-size: 20px;
     border: 2px solid black;
     vertical-align: middle;
@@ -48,9 +34,10 @@ body{
 }
 
 footer{
-    background-color: rgb(219, 158, 89, 0.7);
-    height: 350px;
-    width: 20%;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  
+    height: 230px;
+    width: 100%;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -77,9 +64,14 @@ footer{
 }
 
 .navi{
-    vertical-align: middle;
-    text-align: right;
-    font-weight: bold;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  height: 80px;
+  width: 100%;
+  text-align: right;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pic{
@@ -93,7 +85,7 @@ footer{
 h4{
   vertical-align: middle;
     text-align: center;
-    text-decoration: black wavy;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 form{
@@ -101,3 +93,4 @@ form{
     text-align: center;
    
 }
+

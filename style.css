@@ -1,43 +1,79 @@
-body{
-    background:
-      repeating-linear-gradient(90deg, transparent, transparent 50px,
-        rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
-        transparent 56px, transparent 63px,
-        rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,
-        transparent 69px, transparent 116px,
-        rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
-      repeating-linear-gradient(0deg, transparent, transparent 50px,
-        rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
-        transparent 56px, transparent 63px,
-        rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,
-        transparent 69px, transparent 116px,
-        rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
-      repeating-linear-gradient(-45deg, transparent, transparent 5px,
-        rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px),
-      repeating-linear-gradient(45deg, transparent, transparent 5px,
-        rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px);
-    
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: rgb(202, 159, 41)underline; 
+  color: tomato;
+  text-shadow: 1px 1px 2px burlywood, 0 0 1em white, 0 0 0.2em rgb(189, 145, 52);
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.bannière{
+  height: 150px;
+  width: 100%;
+  
 }
 
-nav{
-    vertical-align: middle;
-    text-align: center;
-    font-weight: bold;
+body{
+
+background-size: 100% 100%;
+    
+  font-size: 20px;
+  border: 2px solid black;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+margin-bottom: 30px;
+  
+
+  
+  
 }
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    vertical-align: middle;
-    text-align: center;
-    text-decoration: rgb(202, 159, 41)underline; 
-    color: tomato;
-    text-shadow: 1px 1px 2px burlywood, 0 0 1em white, 0 0 0.2em rgb(189, 145, 52);
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
+
+footer{
+background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+
+  height: 50px;
+  width: 100%;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+
+
+nav{
+background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+height: 80px;
+width: 100%;
+text-align: left;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.pic{
+ width: 10%;
+ height: 10%;
+
+}
+
+
+
+h4{
+vertical-align: middle;
+  text-align: center;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 form{
-  vertical-align: middle;
-    text-align: center;
+vertical-align: middle;
+  text-align: center;
+ 
 }

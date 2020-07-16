@@ -1,9 +1,5 @@
 <footer>
     
-</br>
-    </br>
-    </br>
-    </br>
 
     <li>
     <a href="./J03/ex-02.html">Accueil ISCC 2020</a>
