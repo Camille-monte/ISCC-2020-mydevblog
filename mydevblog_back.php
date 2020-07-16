@@ -15,17 +15,17 @@
             <?php if($_GET['page'] == 'ajout-utilisateurs') : ?>
             <strong><a style="color:#FF6347" href="form-utili.php">Ajout utilisateurs</a></strong>
             <?php else : ?>
-                <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Back-Office/mydevblog_back.php?page=ajout-utilisateurs">Ajout utilisateurs</a>
+                <a href="./mydevblog_back.php?page=ajout-utilisateurs">Ajout utilisateurs</a>
             <?php endif; ?>
             <?php if($_GET['page'] == 'ajout_article') : ?>
             <strong><a style="color:#FF6347" href="form-art.php">Ajout article</a></strong>
             <?php else : ?>
-                <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Back-Office/mydevblog_back.php?page=ajout-article">Ajout article</a>
+                <a href="./mydevblog_back.php?page=ajout-article">Ajout article</a>
             <?php endif; ?>    
             <?php if($_GET['page'] == 'utilisateurs') : ?>
                 <strong><a style="color:#FF6347" href="utilisateurs.php">Utilisateur</a></strong>
             <?php else : ?>
-                <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Back-Office/mydevblog_back.php?page=utilisateurs">Utilisateurs</a>
+                <a href="./mydevblog_back.php?page=utilisateurs">Utilisateurs</a>
             <?php endif; ?>
 
             

@@ -44,12 +44,12 @@ function login ($pdo){
                         echo '<br>';
                         echo "Vous êtes connectés";
                         echo '<br>';
-                        echo '<a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Back-Office/mydevblog_back.php">Espace administrateur</a>';
+                        echo '<a href="./mydevblog_back.php">Espace administrateur</a>';
                     }
                 }
                     else{
                         echo '<p>mauvais couple identifiant / mot de passe.</p>';
-                        echo '<p><a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=connexion">Connexion</a></p>';
+                        echo '<p><a href="./front.php?page=connexion">Connexion</a></p>';
                         }
             }
         }

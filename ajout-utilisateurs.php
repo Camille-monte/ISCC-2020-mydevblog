@@ -50,7 +50,7 @@ function login ($pdo){
                         $sql="INSERT INTO utilisateurs (loginn, passwordd) VALUES('$login', '$password')";
                         $pdo->exec($sql);
                         echo '<p> Compte ajouté à la base de données.</p>';
-                        echo '<p><a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Back-Office/mydevblog_back.php?page=utilisateurs">Utilisateurs</a></p>';
+                        echo '<p><a href="./mydevblog_back.php?page=utilisateurs">Utilisateurs</a></p>';
                     } else{
                         echo "<p>Ce compte existe déjà.</p>";
                     }

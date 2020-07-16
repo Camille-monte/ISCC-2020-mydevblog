@@ -22,15 +22,15 @@ function connect_to_database(){
 
 function afficher_utilisateurs($pdo){
 
-$utilisateurs=$pdo->query("SELECT * FROM utilisateurs")->fetchAll();
+$query=$pdo->query("SELECT * FROM utilisateurs")->fetchAll();
 
     echo '<ul>';
-    foreach($utilisateurs as $utilisateur){
+    foreach($query as $utilisateur){
 
         echo'<li><strong> Login: </stong>'.$utilisateur['loginn'].'.<strong>Password:</strong>'.$utilisateur['passwordd'].
         '</br>'
         ?>
-        <form method="POST" action="./supprimer-utilisateurs.php?id=<?php echo $utilisateurs['id']?>">
+        <form method="POST" action="./supprimer-utilisateurs.php?id=<?php echo $utilisateur['id']?>">
         <button type="submit" name="boutton-supprimer">Supprimer utilisateurs</button>
         </form>
         </li>

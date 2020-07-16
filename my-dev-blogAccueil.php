@@ -16,7 +16,7 @@
   <br/> Pendant ce stage j'ai appris à développer à l'aide de nombreux outils. Voilà le résultat de 3 semaines d'apprentissages ! 
 </br> Bonne lecture !</p>
 
-   <img class="pic" src="../assets/toppng.com-clip-art-royalty-free-download-lag-stage-series-solid-lag-ukulele-1200x682.png"> 
+   <img class="pic" src="assets/toppng.com-clip-art-royalty-free-download-lag-stage-series-solid-lag-ukulele-1200x682.png"> 
 
     <p>Ici vous allez pouvoir retrouver des tablatures mais aussi des grattages en vidéo, <br/>au menu :
         <li>Explications,</li>
@@ -26,7 +26,7 @@
         <li>Bons plans</li>
         </p>
 
-    <p>N'hésitez pas à aller faire un tour dans la rubrique <a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=articles">Articles</a> où vous trouverez toutes mes préstations et news de ma page !</p>
+    <p>N'hésitez pas à aller faire un tour dans la rubrique <a href="./front.php?page=articles">Articles</a> où vous trouverez toutes mes préstations et news de ma page !</p>
     <p>Vous pouvez déjà retrouver mes 5 derniers articles : </p>
     </div>
         <br/>
@@ -73,7 +73,8 @@
         ?>
      </p>     
  
-
+    </br>
+    </br>
 
 </body>
 </html>

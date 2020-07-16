@@ -42,7 +42,7 @@ function login ($pdo){
             VALUES('$Sujet', '$Article', '$Extrait', ' ', '$Auteur', '$Dates')";
             $pdo->exec($sql);
             echo '<p>Article ajouté à la base de données avec succès! </p>';
-            echo '<p><a href="http://localhost:8888/ISCC-2020/ISCC-2020-mydevblog/Front-Office/front.php?page=articles"></a></p>';
+            echo '<p><a href="./front.php?page=articles"></a></p>';
             }
         }
         catch(PDOException $e){
