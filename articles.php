@@ -31,7 +31,7 @@ function articles($pdo){
     $articles=$pdo->query("SELECT * FROM Articles")->fetchAll();
 
     foreach ($articles as $article){
-        echo '<h1><li>'.$article['Sujet'].'</li></h1>';
+        echo '<h4><li>'.$article['Sujet'].'</li></h4>';
         echo '<p>'.$article['Extrait'].'</p>';
 
         $number_article=$article['Numéro'];

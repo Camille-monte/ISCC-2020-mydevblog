@@ -33,7 +33,7 @@ function afficher_article_entier($pdo){
     $articles=$pdo->query("SELECT * FROM Articles
     WHERE Numéro='$number_article'")->fetchAll();
 
-    echo '<h1>'.$articles[0]['Sujet'].'</h1>';
+    echo '<h4>'.$articles[0]['Sujet'].'</h4>';
     echo '<p>'.$articles[0]['Article'].'</p>';
 }
 $pdo=connect_to_database();
