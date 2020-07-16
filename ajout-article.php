@@ -52,9 +52,4 @@ function login ($pdo){
 $pdo = connect_to_database();
 login($pdo);
 ?>
-</body>
-<footer>
-    <a href="./front.php?page=accueil">Front-Office</a>
-</footer>
-</html>
-</html>
+

@@ -9,3 +9,8 @@
         <input type="submit" value="Envoyer">
     </div>
 </form>
+<footer>
+    <a href="./front.php?page=accueil">Front-Office</a>
+</footer>
+</html>
+</html>

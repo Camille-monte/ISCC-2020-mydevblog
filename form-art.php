@@ -13,3 +13,7 @@
 </form>
      
 </body>
+<footer>
+    <a href="./front.php?page=accueil">Front-Office</a>
+</footer>
+</html>

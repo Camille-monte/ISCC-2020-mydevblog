@@ -48,5 +48,8 @@
         recup_articles($pdo);
         ?>
 
-
+<footer>
+    <a href="./front.php?page=accueil">Front-Office</a>
+</footer>
+</html>
 </html>
